@@ -26,10 +26,10 @@ class Movie < ActiveRecord::Base
         Movie.where("release_date > '2002' ")
     
     end
-    def update_with_attributes(title)
-        Movie.update(title: title)
+    # def update_with_attributes(title:"Even Awesomer Flick")
+    #     Movie.update(title: title)
        
-    end
+    # end
 
     def self.update_all_titles(title)
         Movie.update_all(title: title)
